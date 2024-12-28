@@ -32,7 +32,257 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Card Styling with Border Radius */
+.group {
+  border-radius: 1.5rem;
+  /* For extra rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* For further customization, you can adjust the border radius for individual corners */
+.group {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+
+/* Add margin-top to each card */
+.group {
+  margin-top: 20px;
+  /* Adjust this value to add space between cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+/* Card Hover Effects */
+.group:hover {
+  transform: translateY(-10px);
+  /* Lift card */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+  /* Slight zoom */
+}
+
+.group:hover .group-hover\:text-indigo-600 {
+  color: #4c51bf;
+  /* Lighter text color on hover */
+}
+
+/* Button Hover Animation */
+.button-hover {
+  background-color: #ff6363;
+  /* Soft red background */
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.button-hover:hover {
+  background-color: #ff4b4b;
+  /* Darker red */
+  transform: scale(1.05);
+  /* Slight zoom */
+}
+
+.button-hover:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 99, 99, 0.3);
+  /* Add outline on focus */
+}
+
+/* Gradient Overlay on Cards */
+.bg-energy-drinks {
+  background: url('./MyComponents/Header/1.png') center/cover no-repeat;
+  background-blend-mode: overlay;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* Dark overlay for text visibility */
+}
+
+.bg-glam-up {
+  background: url('./MyComponents/Header/1.png') center/cover no-repeat;
+  background-blend-mode: overlay;
+  /* background-color: rgba(255, 99, 99, 0.5); */
+  /* Soft pink overlay */
+}
+
+/* Optional: Apply gradients to the background */
+.bg-gradient-purple {
+  background: linear-gradient(45deg, #6a1b9a, #8e24aa);
+
+  background: url('./MyComponents/Header/1.png') center/cover no-repeat;
+
+  /* Purple gradient */
+}
+
+.bg-gradient-pink {
+  background: linear-gradient(45deg, #ff4081, #ff80ab);
+
+  background: url('./MyComponents/Header/1.png') center/cover no-repeat;
+  /* Pink gradient */
+}
+
+.bg-perfumes {
+  background: linear-gradient(45deg, #ff4081, #ff80ab);
+
+  background: url('./MyComponents/Header/1.png') center/cover no-repeat;
+  /* Pink gradient */
+}
+
+.bg-health-essentials {
+  background: linear-gradient(45deg, #ff4081, #ff80ab);
+  background: url('./MyComponents/Header/1.png') center/cover no-repeat;
+}
+
+/* Text Styling */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #2d3748;
+  /* Dark gray text */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Text color changes on hover */
+.group:hover h2 {
+  color: #4a5568;
+  /* Lighter shade of gray */
+}
+
+/* Apply a slight text animation */
+.group h2 {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Custom Dots */
+.slick-dots li button:before {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 40px;
+  /* Lighter color for the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6363;
+  /* Highlight the active dot */
+}
+
+/* Custom Arrows */
+.slick-prev,
+.slick-next {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Darken on hover */
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+/* Animated Icon */
+.decorative-icon {
+  animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pulsing Effect for Decorative Icons */
+.decorative-icon:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Elevated card effect */
+.group {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group:hover {
+  transform: translateY(-10px);
+  /* Lift the card */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.05);
+  /* Deeper shadow */
+}
+
+/* Parallax Background Effect */
+.bg-parallax {
+  background: url('./MyComponents/Header/1.png') center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Keep it behind the content */
 }
