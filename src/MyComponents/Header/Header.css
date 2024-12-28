@@ -1,0 +1,283 @@
+/* Header.css */
+
+/* General Navbar Styling */
+.navbar-custom {
+  background: linear-gradient(90deg, #0056b3, #0099ff);
+  /* Attractive blue gradient */
+  color: white;
+  padding: 10px 20px;
+  /* Add some spacing */
+  /* font-family: 'Arial', sans-serif; */
+  /* Modern font */
+}
+
+/* Navbar Dropdown Styling */
+.navbar-custom .dropdown-toggle {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: #0056b3;
+  /* Match gradient base color */
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar-custom .dropdown-item {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #004080;
+  /* Slightly darker blue on hover */
+  color: #e0e0e0;
+  /* Soft hover effect */
+}
+
+/* Brand Styling */
+.navbar-custom .navbar-brand {
+  color: rgba(108, 15, 34, 0.845);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* Remove underline */
+}
+
+.navbar-custom .navbar-brand:hover {
+  text-decoration: none;
+  /* Ensure no underline on hover */
+}
+
+/* Text and Link Styling */
+.navbar-custom .me-4 {
+  font-size: 1rem;
+  color: #ffffffb3;
+  /* Slightly dimmed white */
+}
+
+.navbar-custom .text-white {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-custom .text-white:hover {
+  color: #e0e0e0;
+  /* Soft hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-custom .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-custom .me-4 {
+    margin: 10px 0;
+  }
+}
+
+/* Dropdown Styling */
+.location-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+
+}
+
+.location-dropdown .dropdown-item:hover {
+  background-color: #004080;
+  color: #e0e0e0;
+}
+
+/* Radio Button Styling */
+.location-dropdown input[type="radio"] {
+  accent-color: #0099ff;
+  cursor: pointer;
+  padding: 60px;
+}
+
+/* Custom styles for the Download App link */
+
+
+
+/*Header1.js css*/
+.header-container {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-button {
+  background-color: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button,
+.membership-button {
+  border: 1px solid #2874f0;
+  color: #2874f0;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.header-categories span {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.header-categories span:hover {
+  background-color: #f0f0f0;
+}
+
+/* Header container styles */
+.header-container {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+}
+
+/* Enhanced Logo Styles */
+.logo {
+  height: 60px;
+  /* Increased height for better visibility */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  /* Smooth transition for hover effect */
+  padding: 5px;
+  /* Add some padding around the logo */
+  border-radius: 8px;
+  /* Slightly rounded corners */
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow on hover */
+}
+
+/* Rest of the header styles */
+.search-bar {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button,
+.membership-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ff9800;
+  color: #ff9800;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.membership-button {
+  white-space: nowrap;
+}
+
+.header-categories {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+  overflow-x: auto;
+}
+
+.header-categories span {
+  cursor: pointer;
+  white-space: nowrap;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.header-categories span:hover {
+  color: #ff9800;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-top {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo {
+    height: 50px;
+    /* Slightly smaller on mobile */
+  }
+
+  .search-bar {
+    width: 100%;
+    order: 2;
+  }
+
+  .membership-button {
+    width: 100%;
+    order: 3;
+  }
+}
